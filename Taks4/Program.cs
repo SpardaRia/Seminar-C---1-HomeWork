@@ -19,17 +19,20 @@ int numberThree = Convert.ToInt32(numberThreeUser);
 
 if (numberOne > numberTwo)
 {
-    int max = numberOne;
+if ( numberOne > numberThree)
+{
+    Console.WriteLine($"Наибольшее число: {numberOne}");
+} 
+else
+{
+    int max = numberThree;
+    Console.WriteLine($"Наибольшее число: {numberThree}");
 }
-else if ( numberTwo > numberThree)
+}
+else if (numberTwo > numberThree)
 {
     int max = numberTwo;
     Console.WriteLine($"Наибольшее число: {numberTwo}");
-}
-else if (numberOne > numberThree)
-{
-    int max = numberOne;
-    Console.WriteLine($"Наибольшее число: {numberOne}");
 }
 else 
 {
